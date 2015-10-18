@@ -1,0 +1,13 @@
+var my_number = 7;
+
+var timesTwo = function(number) {
+    var my_number = number * 2; // This line without "var" becomes global
+    console.log("Inside the function my_number is: ");
+    console.log(my_number);
+}; 
+
+timesTwo(7);
+
+console.log("Outside the function my_number is: ")
+console.log(my_number);
+
