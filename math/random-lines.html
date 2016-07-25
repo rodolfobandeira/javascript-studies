@@ -5,7 +5,7 @@
     </head>
 <body>
 <script type="text/javascript" charset="utf-8">
-    window.onload = function() {
+   var myFunction = function() {
         var canvas = document.getElementById("canvas"),
             context = canvas.getContext("2d"),
             width = canvas.width = window.innerWidth,
@@ -28,7 +28,9 @@
         	color += letters[Math.floor(Math.random() * 16)];
     	}
     	return color;
-	}
+    }
+
+    setInterval(myFunction, 500);
 </script>
 <style type="text/css" media="all">
 html, body {
